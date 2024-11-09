@@ -187,7 +187,37 @@ const Navbar = () => {
                                             className={`block px-4 py-2 cursor-pointer transition-all duration-500 hover:bg-[#a855f7] hover:text-white
     ${activeSection === 'Wiempower-2024' ? 'bg-[#a855f7] text-white' : 'text-gray-200'}`}
                                         >
-                                            WIEmpower 2024
+                                            WIEmpower 4.0
+                                        </div>
+                                        <div
+                                            onClick={() => {
+                                                window.open('https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/index.html', '_blank'); // Opens in a new tab
+                                                setIsSubBarOpen(false);
+                                            }}
+                                            className={`block px-4 py-2 cursor-pointer transition-all duration-500 hover:bg-[#a855f7] hover:text-white
+    ${activeSection === 'Wiempower-2024' ? 'bg-[#a855f7] text-white' : 'text-gray-200'}`}
+                                        >
+                                            WIEmpower 3.0
+                                        </div>
+                                        <div
+                                            onClick={() => {
+                                                window.open('https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/about2.html', '_blank'); // Opens in a new tab
+                                                setIsSubBarOpen(false);
+                                            }}
+                                            className={`block px-4 py-2 cursor-pointer transition-all duration-500 hover:bg-[#a855f7] hover:text-white
+    ${activeSection === 'Wiempower-2024' ? 'bg-[#a855f7] text-white' : 'text-gray-200'}`}
+                                        >
+                                            WIEmpower 2.0
+                                        </div>
+                                        <div
+                                            onClick={() => {
+                                                window.open('https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/about.html', '_blank'); // Opens in a new tab
+                                                setIsSubBarOpen(false);
+                                            }}
+                                            className={`block px-4 py-2 cursor-pointer transition-all duration-500 hover:bg-[#a855f7] hover:text-white
+    ${activeSection === 'Wiempower-2024' ? 'bg-[#a855f7] text-white' : 'text-gray-200'}`}
+                                        >
+                                            WIEmpower 1.0
                                         </div>
 
                                         <div
@@ -271,12 +301,39 @@ const Navbar = () => {
                                 <div className="flex flex-col pl-4">
                                     <div
                                         onClick={() => {
-                                            handleCustomScroll('Wiempower-2024');
+                                            window.open('https://ieee-igdtuw.github.io/wie-website/index.html', '_blank'); // Opens in a new tab
                                             setIsSubBarOpen(false);
                                         }}
                                         className="text-gray-200 cursor-pointer hover:text-[#a855f7]"
                                     >
-                                        WIEmpower 2024
+                                        WIEmpower 4.0
+                                    </div>
+                                    <div
+                                        onClick={() => {
+                                            window.open('https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/index.html'); // Opens in a new tab
+                                            setIsSubBarOpen(false);
+                                        }}
+                                        className="text-gray-200 cursor-pointer hover:text-[#a855f7]"
+                                    >
+                                        WIEmpower 3.0
+                                    </div>
+                                    <div
+                                        onClick={() => {
+                                            window.open('https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/about2.html'); // Opens in a new tab
+                                            setIsSubBarOpen(false);
+                                        }}
+                                        className="text-gray-200 cursor-pointer hover:text-[#a855f7]"
+                                    >
+                                        WIEmpower 2.0
+                                    </div>
+                                    <div
+                                        onClick={() => {
+                                            window.open('https://igdtuw19ieee.github.io/WIEmpower/colorlib.com/preview/theme/plataforma/about.html'); // Opens in a new tab
+                                            setIsSubBarOpen(false);
+                                        }}
+                                        className="text-gray-200 cursor-pointer hover:text-[#a855f7]"
+                                    >
+                                        WIEmpower 1.0
                                     </div>
                                     <div
                                         onClick={() => {
