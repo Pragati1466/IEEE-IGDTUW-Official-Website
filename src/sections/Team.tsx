@@ -13,7 +13,7 @@ const formatName = (name: string) => {
 
 const Team = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Initialize AOS
+        AOS.init({ duration: 1000 });
     }, []);
 
     return (

@@ -22,10 +22,8 @@ export default function Faq() {
     };
 
     useEffect(() => {
-        // Initialize AOS
-        AOS.init({ duration: 1000 }); // Set duration for AOS animations
+        AOS.init({ duration: 1000 });
 
-        // Intersection Observer to detect when FAQ section is in view
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting) {
@@ -57,7 +55,7 @@ export default function Faq() {
                             key={index}
                             className={`bg-[#000000] shadow-lg rounded-lg overflow-hidden border-2 border-[#616161] 
                                 transition-transform duration-500 ease-out`}
-                            data-aos="fade-up" // Add AOS attribute for animation
+                            data-aos="fade-up"
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
                             <div

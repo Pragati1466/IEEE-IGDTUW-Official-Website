@@ -10,7 +10,6 @@ import Image from "next/image";
 
 const iconSize = 24;
 
-// Email click handler function
 const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
 
@@ -50,9 +49,9 @@ const Socials = [
     {
         name: "Email",
         icon: <FaEnvelope size={iconSize} color="#ffffff" />,
-        link: "#",  // Email is handled by onClick
+        link: "#", 
         hoverColor: "#d44638",
-        onClick: handleEmailClick  // Assign the email click handler here
+        onClick: handleEmailClick
     },
 ];
 
@@ -73,7 +72,7 @@ const Navbar = () => {
 
     const handleCustomScroll = (targetId: string) => {
         scroller.scrollTo(targetId, scrollConfig);
-        setActiveSection(targetId);  // Set the active section when clicked
+        setActiveSection(targetId);
     };
 
     useEffect(() => {

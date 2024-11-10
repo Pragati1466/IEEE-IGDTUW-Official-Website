@@ -4,14 +4,13 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Import image using the '@/assets' alias
 import logoImage from '@/assets/logos/white_logo.png';
 
 const Footer = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Duration of animations
-            once: true,     // Animation should happen only once
+            duration: 1000,
+            once: true,    
         });
     }, []);
 
@@ -24,7 +23,7 @@ const Footer = () => {
                     {/* Contact Information */}
                     <div className="mb-8 md:mb-0" data-aos="fade-right">
                         <Image
-                            src={logoImage} // Using imported image here
+                            src={logoImage} 
                             alt="IEEE Logo"
                             width={120}
                             height={120}

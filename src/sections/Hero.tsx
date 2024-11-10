@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
+import { motion } from 'framer-motion'; 
 
 const Hero = () => {
   const [members, setMembers] = useState(0);
@@ -94,9 +95,19 @@ const Hero = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center">
+      <motion.div
+        className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 pt-24 text-center"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         {/* Title Section */}
-        <div className="mb-8 space-y-6">
+        <motion.div
+          className="mb-8 space-y-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           <h1 className="text-3xl font-extrabold text-white md:text-4xl lg:text-5xl">
             Welcome to{' '}
             <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
@@ -107,15 +118,25 @@ const Hero = () => {
           <p className="text-lg text-gray-300 md:text-xl">
             Institute of Electrical and Electronics Engineers IGDTUW Student Branch.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Explore Section with Hollow Style */}
-        <div className="mb-10 inline-block border-2 border-gradient-to-r from-purple-600 to-blue-500 px-8 py-3 text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">
+        <motion.div
+          className="mb-8 inline-block border-2 border-gradient-to-r from-purple-600 to-blue-500 px-6 py-2 text-md font-medium text-white rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 bg-opacity-60 transition-all duration-700 ease-in-out"
+          initial={{ scale: 0.5, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
           Explore our student branch
-        </div>
+        </motion.div>
+
 
         {/* Social Icons in a row */}
-        <div className="mb-10 flex justify-center space-x-6">
+        <motion.div
+          className="mb-10 flex justify-center space-x-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.9 }}
+        >
           {Socials.map((social) => (
             <a
               key={social.name}
@@ -128,10 +149,15 @@ const Hero = () => {
               {social.icon}
             </a>
           ))}
-        </div>
+        </motion.div>
 
         {/* Stats Section */}
-        <div className="flex justify-center space-x-12">
+        <motion.div
+          className="flex justify-center space-x-12"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.2 }}
+        >
           <div className="flex flex-col items-center">
             <span className="text-purple-500 text-xl">Members</span>
             <span className="text-white text-3xl font-bold">{members}+</span>
@@ -144,8 +170,8 @@ const Hero = () => {
             <span className="text-purple-500 text-xl">Events</span>
             <span className="text-white text-3xl font-bold">{recognitions}+</span>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

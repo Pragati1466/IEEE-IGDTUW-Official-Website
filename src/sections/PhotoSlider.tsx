@@ -24,17 +24,17 @@ const PhotoSlider = () => {
 
                     {/* Animated sliding div */}
                     <motion.div
-                        initial={{ x: 0 }}                   // Start position
-                        animate={{ x: '-100%' }}             // End position (move left)
+                        initial={{ x: 0 }} 
+                        animate={{ x: '-100%' }}
                         transition={{
-                            repeat: Infinity,                // Infinite loop
+                            repeat: Infinity,
                             repeatType: "loop",
-                            duration: 40,                    // Duration of slide
-                            ease: "linear"                   // Smooth linear slide
+                            duration: 40,
+                            ease: "linear"
                         }}
-                        className='flex flex-none gap-8 md:gap-12' // Reduced gap for better spacing
+                        className='flex flex-none gap-8 md:gap-12'
                     >
-                        {/* Render the images twice for continuous loop */}
+
                         {[...photos, ...photos].map((photo, index) => (
                             <div key={index} className="slider-image-container">
                                 <div className="absolute inset-0 bg-black opacity-30 z-10 rounded-3xl"></div>

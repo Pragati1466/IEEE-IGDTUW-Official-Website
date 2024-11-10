@@ -14,10 +14,9 @@ const Events: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
-      duration: 1000, // Duration of animations
-      once: true, // Whether animation should happen only once
+      duration: 1000,
+      once: true,
     });
 
     const handleResize = () => {

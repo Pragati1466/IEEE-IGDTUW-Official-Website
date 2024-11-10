@@ -1,4 +1,3 @@
-/* Hero Section */
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -7,7 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  margin-top: 60px; /* Add margin to ensure space for the navbar */
+  margin-top: 60px; 
   background-image: url('https://storage.googleapis.com/prd-mercan-asset/2023/12/182951a6-img_4256-e1701917255923.jpg');
   background-size: cover;
   background-position: center;
@@ -21,15 +20,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Slight dark overlay for text readability */
-  z-index: 1; /* Ensures overlay is above the background */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* Ensure the content is above the overlay */
+  z-index: 2;
   text-align: center;
-  color: white; /* Ensures text stands out */
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;

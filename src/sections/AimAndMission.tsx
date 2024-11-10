@@ -36,13 +36,12 @@ const AimAndMission = () => {
             observer.observe(currentRef);
         }
 
-        // Use the stored ref value in cleanup
         return () => {
             if (currentRef) {
                 observer.unobserve(currentRef);
             }
         };
-    }, []); // Empty dependency array is fine here as we're using closure
+    }, []);
 
     return (
         <section ref={sectionRef} className="py-12 overflow-hidden">

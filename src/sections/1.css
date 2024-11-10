@@ -1,17 +1,16 @@
-/* Container for each slider image with fixed dimensions */
+
 .slider-image-container {
   position: relative;
   width: 340px;
   height: 200px;
   overflow: hidden;
-  border-radius: 16px; /* Optional: round the corners */
+  border-radius: 16px;
 }
 
-/* Ensures images fully cover the container without stretching */
 .slider-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Makes the image fill the container while maintaining aspect ratio */
+  object-fit: cover; 
 }
 
 
@@ -33,19 +32,19 @@
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(20px); /* Start slightly lower */
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at original position */
+    transform: translateY(0);
   }
 }
 
 .animate-fade-up {
-  animation: fadeUp 0.6s forwards; /* Adjust duration as needed */
+  animation: fadeUp 0.6s forwards;
 }
 
-/* Corrected: Closing the @keyframes here */
+
 @keyframes fade-up {
   0% {
     opacity: 0;
@@ -57,10 +56,10 @@
   }
 }
 
-/* Classes for animations */
+
 .fade-up {
-  opacity: 0; /* Start hidden */
-  animation: fade-up 0.5s forwards; /* Animation properties */
+  opacity: 0;
+  animation: fade-up 0.5s forwards;
 }
 
 /* Hover effect */
@@ -69,7 +68,7 @@
 }
 
 .hover-effect:hover {
-  transform: scale(1.05); /* Scale effect on hover */
+  transform: scale(1.05); 
 }
 
 

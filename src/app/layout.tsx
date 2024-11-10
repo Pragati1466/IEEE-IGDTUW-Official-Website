@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ibmPlexSans.className} relative min-h-screen w-full bg-black`}>
-        {/* Main content */}
         <main className="relative z-10 min-h-screen">
           {children}
         </main>
