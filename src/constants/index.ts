@@ -158,28 +158,28 @@ export const TEAM = [
       instagram: "https://www.instagram.com/divyaverma0__9/",
   },
   {
-      role: "WEB Administrator",
+      role: "Web Administrator",
       name: "MAHAK SAHU",
       memberPic: mahakSahu, // Use mahakSahu image
       linkedin: "https://www.linkedin.com/in/mahaksahu/",
       instagram: "https://www.instagram.com/pari_sahu2004/",
   },
   {
-      role: "WEB Administrator",
+      role: "Web Administrator",
       name: "MANVI UPADHYAY",
       memberPic: manviUpadhyay, // Use manviUpadhyay image
       linkedin: "https://www.linkedin.com/in/manviupadhyay2/",
       instagram: "https://www.instagram.com",
   },
   {
-      role: "Technical Head",
+      role: "Media Head",
       name: "POOJA",
       memberPic: pooja, // Use pooja image
       linkedin: "https://www.linkedin.com/in/pooja-rajput-0b8716269/",
       instagram: "https://www.instagram.com/pooja_rajput80/",
   },
   {
-      role: "Technical Head",
+      role: "Membership Incharge",
       name: "JHANVI MADAN",
       memberPic: jhanviMadan, // Use jhanviMadan image
       linkedin: "https://www.linkedin.com/in/jhanvi-madan-348a4a228/",
