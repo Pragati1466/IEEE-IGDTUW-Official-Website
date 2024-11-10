@@ -16,17 +16,16 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "target": "ES2017",
+    "baseUrl": ".", // Ensures the base path for "paths" aliases is root
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "target": "ES2017"
+    ]
   },
   "include": [
     "next-env.d.ts",
